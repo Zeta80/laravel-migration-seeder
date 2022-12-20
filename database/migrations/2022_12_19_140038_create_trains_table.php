@@ -24,6 +24,8 @@ return new class extends Migration
             $table->time('orario_arrivo');
             $table->string('codice_treno', 50);
             $table->smallInteger('numero_carrozze')->unsigned();
+            $table->boolean('partito');
+            $table->boolean('cancellato');
             $table->timestamps();
         });
     }
